@@ -1,13 +1,14 @@
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.fondonav {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position:center;
 }
 .container{
-    height: 100vh;
-    width: 100%;
+    height: 200h;
+    width: 110%;
     background: linear-gradient(45deg,#e8e5e5,#7462ff,#f48e21,#23d5ab);
-    background-size: 300% 300%;
+    background-size: 250% 100%;
     animation: 12s ease-in-out infinite;
 }
 @keyframes color{
@@ -28,4 +29,32 @@
     margin-bottom: 2rem;
     background-color: #e9ecef;
     border-radius: .3rem;
+  }
+
+  .body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+.spinner{
+    height: 220px;
+    width: 220px;
+    border: 6px solid;
+    border-color: #7462ff transparent #23d5ab transparent;
+    border-radius: 80%;
+    animation: spin 1.4s linear infinite;
+  }
+  .hijo {
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
   }
